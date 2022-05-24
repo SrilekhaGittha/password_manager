@@ -1,0 +1,97 @@
+ <style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif; 
+}
+.main-div{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-div{
+    width: 80%;
+    height: 85vh;
+    background: linear-gradient(to right bottom, #77c2f3, #00c1f7);
+    padding: 20px 0 0 0;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.03);
+    border-radius: 10px;
+}
+h1{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+table{
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.03);
+    border-radius: 10px;
+    margin: auto;
+}
+th,td{
+    border: 1px solid #f2f2f2;
+    padding: 15px 35px;
+    text-align: center;
+    color: grey;
+}
+th{
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;  
+    font-size: 15px;
+}
+td{
+    font-size: 13px;
+}
+.web-style{
+    font-size: 14px;
+    color: grey;
+    display: inline-block;
+    background: #f2f2f2;
+    border-radius: 2px;
+    line-height: 30px;
+    padding: 0 14px;
+}
+.post-class{
+    text-transform: uppercase;
+}
+.inp{
+    border: none;
+}
+.fa{
+    font-size: 18px;
+}
+.fa-edit{
+    color: #63c76a;
+}
+.fa-trash{
+    color: #ff0000;
+}
+.fa-plus{
+    color: #35b8cf;
+}
+/*.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}*/
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+</style>
