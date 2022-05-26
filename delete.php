@@ -23,7 +23,4 @@ else{
     </script>
     <?php
 }
-
-
-
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2022 at 08:19 AM
+-- Generation Time: May 26, 2022 at 01:42 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -41,9 +41,9 @@ CREATE TABLE `password_details` (
 INSERT INTO `password_details` (`id`, `username`, `password`, `website`) VALUES
 (10, 'email_wish', 'password@123', 'www.email_wish.com'),
 (11, 'Iam_sweet#2&3', 'sweetest_#@!123', 'www.My_own_wish.com'),
-(12, 'Iam_sweet#2&3', 'be_youuuu#$2%3', 'www.my_name_is.com'),
-(13, 'be_unique@22', 'iam_unique#2002', 'ww.uniqueworld.com'),
-(14, 'intern@22', 'email_wish#me@intern', 'www.internship.com');
+(13, 'be_unique@2002', 'iam_unique#2002', 'ww.uniqueworld.com'),
+(14, 'intern@22', 'email_wish#me@intern', 'www.internship.com'),
+(15, 'west_side@123', 'weste_is_east123', 'www.itsme_again.com');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,23 @@ INSERT INTO `user_details` (`id`, `username`, `password`) VALUES
 (16, 'email_wish', 'password123'),
 (17, 'insert123', 'password123'),
 (18, 'insert123', 'password123'),
-(19, 'insert123', 'passord');
+(19, 'insert123', 'passord'),
+(20, 'Iam_sweet#2&3', 'swetish'),
+(21, 'Iam_sweet#2&3', 'swetish'),
+(22, 'insert123', 'sweetish123'),
+(23, 'insert123', 'password@123'),
+(24, 'insert123', 'password@123'),
+(25, 'insert123', 'password123'),
+(26, 'insert123', 'password123'),
+(27, 'insert123', 'password123'),
+(28, 'insert123', 'password123'),
+(29, 'insert123', 'pass'),
+(30, 'insert123', 'pass'),
+(31, 'email_wish', '12345'),
+(32, 'email_wish', '12345'),
+(33, 'insert123', '123456'),
+(34, 'insert123', 'pass#@!123'),
+(35, 'beloved', 'we@1234789');
 
 --
 -- Indexes for dumped tables
@@ -101,13 +117,13 @@ ALTER TABLE `user_details`
 -- AUTO_INCREMENT for table `password_details`
 --
 ALTER TABLE `password_details`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_details`
 --
 ALTER TABLE `user_details`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

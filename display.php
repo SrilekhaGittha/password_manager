@@ -9,20 +9,29 @@
     <?php include 'style.css'; ?>
 </head>
 <body>
+
     <div class="main-div">
+
         <h1>Your passwords</h1>
+
         <div class="center-div">
+
             <div class="table-responsive">
+
                 <table>
+
                     <thead>
+
                         <th>S.no</th>
                         <th>Website</th>
                         <th>Username</th>
                         <th>Password</th>
-                        <th colspan="2">Operation</th>
-                        <th><a href="insert.php"><i class="fa fa-plus"></i></a></th>
+                        <th colspan="2">Operation</th>  
+
                     </thead>
+
                     <tbody>
+
                     <?php
 
                     include 'conn.php';
@@ -30,6 +39,16 @@
                     $select_query = "select * from password_details";
 
                     $query = mysqli_query($con,$select_query);
+
+                    ?>
+
+                    <tr>
+
+                    <td colspan="6"><a href="insert.php" style="text-decoration:none"><i class="fa fa-plus"></i></a></td>
+
+                    </tr>
+
+                    <?php
 
                     while($result = mysqli_fetch_assoc($query)){
                    
@@ -41,22 +60,20 @@
                             
                             <td><?php echo $result['username']; ?></td>
 
-                            <td><input class="inp" type="password" name="password" id="password" value="<?php echo $result['password']; ?>" readonly><i class="fa fa-eye-slash" aria-hidden="true" id="show_hide_password" name="show_hide_password"></i></td>
-
-                            <!-- <script src="show_password.js"></script> -->
+                            <td><input class="inp" type="password" name="password" id="password" value="<?php echo $result['password']; ?>" readonly><span><i class="fa fa-eye-slash" aria-hidden="true" id="eye" onclick="toggle()"></i></span></td>
 
                             <td><a href="update.php?id=<?php echo $result['id'] ?>"><i class="fa fa-edit"></i></a></td>
 
                             <td><a href="delete.php?id=<?php echo $result['id'] ?>"><i class="fa fa-trash"></i></a></td>
-
-                            <td><a href="insert.php"><i class="fa fa-plus"></i></a></td>
                         </tr>
+
                         
                         <script>
-                            const show_hide_password = document.querySelector("#show_hide_password");
+
+                            const eye = document.querySelector("#eye");
                             const password = document.querySelector("#password");
 
-                            show_hide_password.addEventListener("click", function (e) {
+                            eye.addEventListener("click", function (e) {
                                 // toggle the type attribute
                                 const type = password.getAttribute("type") === "password" ? "text" : "password";
                                 password.setAttribute("type", type);
@@ -64,18 +81,9 @@
                                 // toggle the icon
                                 this.classList.toggle("fa-eye");
                             });
+
                         </script>
-                        <!-- <script>
-                        var x = document.getElementById("show_hide_password");
-                        var y = document.getElementById("password");
-                        x.onclick = function myFunction() {
-                            if (y.type == "password") {
-                                y.type = "text";
-                            } else {
-                                y.type = "password";
-                            }
-                        }
-                        </script> -->
+
                     <?php
                     }
                     ?>
@@ -86,8 +94,3 @@
     </div>
 </body>
 </html>
-
-<?php
-
-
-?>
